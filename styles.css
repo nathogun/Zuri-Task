@@ -20,25 +20,28 @@ div.logo {
     color: #bcc3c7;
 }
 
-ul.nav-links {
+div.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-ul li {
+div a {
     margin: 0 2vw;
     list-style: none;
     font-size: 1.1rem;
 }
 
-ul li a {
+div  a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1.1rem;
 }
 
-ul li a:hover {
+div  a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
@@ -141,6 +144,7 @@ div.snapshot-team h2 {
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    
 }
 
 div.snapshot-team p {
@@ -345,3 +349,129 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+@media screen and (max-width:768px){
+    div.footer{
+        width: 100%;
+        padding:5rem;
+        border-width: 100%;
+        background-position: center;
+    }
+
+    div.gallery-img{
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:500px){
+
+
+    
+    div.nav-bar{
+        width: 235%;
+    }
+    div.hero-section{
+        width: 235%;
+    }
+    div.hero-content-headin{
+        width: 235%;
+
+    }
+
+    div.hero-background{
+        width: 235%;
+
+    }
+    div.hero-background-pos{
+        list-style: none;
+        width: 0px;
+    }
+    div.snapshot-team{
+        width:235%;
+        /*padding:16rem 20rem;*/
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+
+    div.snapshot-team h2{
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+    div.snapshot-box{
+        width:235%;
+        padding: 4rem 6rem;
+        display:list-item;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+    div.footer{
+        width: 235%;
+        padding:1rem;
+        border-width: 200%;
+        background-position: center;
+    }
+
+    div.gallery-content{
+        width:150%;
+    }
+
+    div.gallery-section{
+        width: 150%;
+    }
+
+    div.gallery-img{
+        width: 150%;
+    }
+
+
+ /*dropdown Menu*/
+
+   div.logo{
+     float: left;
+ }
+
+ div.menu-button{
+    background-color: transparent;
+	color: rgb(92, 20, 20);
+	padding: 2px;
+	font-size: 16px;
+	cursor:pointer;
+	border: 1px solid #fff;
+ }
+
+ div.menu-links{
+    position: relative;
+	display: flex;
+	float: right;
+ }
+
+
+ div.dropdown-menu{
+     display: none;
+ }
+
+
+ div.dropdown-menu  a{
+    color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;  
+}
+
+ div.dropdown-menu a:hover{
+    background-color: white;
+
+}
+
+   div.nav-links:hover div.dropdown-menu{
+     display: flex;
+}
+
+
+  div.nav-links:hover div.menu-button{
+    background-color: transparent;
+}
+
+
+}
+   
