@@ -350,7 +350,7 @@ div.footer h6 {
     padding-top: 6rem;
 }
 
-@media screen and (max-width:768px){
+@media screen and (min-width:768px){
     div.footer{
         width: 100%;
         padding:5rem;
@@ -361,6 +361,10 @@ div.footer h6 {
     div.gallery-img{
         width: 110%;
     }
+    
+    button.menu-button{
+        display: none;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -369,6 +373,7 @@ div.footer h6 {
     
     div.nav-bar{
         width: 235%;
+        margin: 0 auto;
     }
     div.hero-section{
         width: 235%;
@@ -388,7 +393,6 @@ div.footer h6 {
     }
     div.snapshot-team{
         width:235%;
-        /*padding:16rem 20rem;*/
         background-color: #f0f0f0;
         text-align: center;
     }
@@ -430,13 +434,18 @@ div.footer h6 {
      float: left;
  }
 
- div.menu-button{
+ .nav-links{
+     position: relative;
+     display: inline-block;
+     
+ }
+ .menu-button{
     background-color: transparent;
-	color: rgb(92, 20, 20);
-	padding: 2px;
-	font-size: 16px;
+	color: rgba(26, 1, 1, 0.473);
+	padding: 6px;
+	font-size: 26px;
 	cursor:pointer;
-	border: 1px solid #fff;
+	
  }
 
  div.menu-links{
